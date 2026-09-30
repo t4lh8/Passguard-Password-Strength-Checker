@@ -1,6 +1,6 @@
 # 🔐 PassGuard
 
-![Tests](https://github.com/YOUR_USERNAME/passguard/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/t4lh8/passguard/actions/workflows/tests.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.10+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -10,7 +10,7 @@ It estimates how long a password would take to crack and checks whether it appea
 data breaches through the [Have I Been Pwned](https://haveibeenpwned.com/Passwords) API.
 Your password is never sent anywhere.
 
-**🌐 Live demo:** https://YOUR_USERNAME.github.io/passguard/
+**🌐 Live demo:** https://t4lh8.github.io/passguard/
 
 ## Features
 
@@ -41,7 +41,7 @@ The server never learns the password or even its full hash.
 ### CLI
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/passguard.git
+git clone https://github.com/t4lh8/passguard.git
 cd passguard
 python -m passguard            # strength check + breach check
 python -m passguard --offline  # strength check only
