@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PassGuard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <main class="card">
+    <h1>🔐 PassGuard</h1>
+    <p class="subtitle">Check password strength and whether it appeared in a data breach.</p>
+
+    <div class="input-row">
+      <input id="password" type="password" placeholder="Type a password..." autocomplete="off" spellcheck="false">
+      <button id="toggle" type="button" aria-label="Show password">Show</button>
+    </div>
+
+    <div class="meter"><div id="meter-fill"></div></div>
+    <p id="label" class="label">&nbsp;</p>
+
+    <dl class="stats">
+      <div><dt>Length</dt><dd id="length">-</dd></div>
+      <div><dt>Entropy</dt><dd id="entropy">-</dd></div>
+      <div><dt>Crack time</dt><dd id="crack">-</dd></div>
+    </dl>
+
+    <button id="breach-btn" type="button" class="primary" disabled>Check data breaches</button>
+    <p id="breach" class="breach"></p>
+
+    <ul id="warnings" class="list warnings"></ul>
+    <ul id="suggestions" class="list suggestions"></ul>
+
+    <p class="privacy">
+      🛡️ Your password never leaves your browser. The breach check sends only the first
+      5 characters of its SHA-1 hash to <a href="https://haveibeenpwned.com/Passwords" target="_blank" rel="noopener">Have I Been Pwned</a> (k-anonymity).
+    </p>
+
+    <footer class="credit">Made by <strong>Talha Aker</strong></footer>
+  </main>
+  <script src="background.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
