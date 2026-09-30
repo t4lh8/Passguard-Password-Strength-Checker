@@ -12,6 +12,8 @@ Your password is never sent anywhere.
 
 **🌐 Live demo:** https://t4lh8.github.io/Passguard-Password-Strength-Checker/
 
+![PassGuard web app screenshot](assets/screenshot.png)
+
 ## Features
 
 - **Entropy-based strength scoring** from *Very weak* to *Very strong*
